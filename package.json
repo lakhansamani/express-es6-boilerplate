@@ -1,0 +1,35 @@
+{
+  "name": "importer-service",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "repository": "https://github.com/appbaseio-confidential/importer-service.git",
+  "author": "lakhansamani <lakhan.m.samani@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1"
+  },
+  "scripts": {
+    "develop": "nodemon --exec babel-node src/index.js",
+    "build": "babel src --out-dir dist",
+    "start": "node dist/index.js",
+    "format": "prettier --write 'src/**/*.js'"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/node": "^7.4.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.4.4",
+    "@babel/plugin-transform-arrow-functions": "^7.2.0",
+    "@babel/plugin-transform-async-to-generator": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/runtime": "^7.4.5",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "nodemon": "^1.19.1",
+    "prettier": "^1.17.1"
+  }
+}
